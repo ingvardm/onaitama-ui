@@ -1,0 +1,5 @@
+.table-wrapper {
+	--border-width: 0.4rem;
+	--border-color: lightcoral;
+	--size: 60vmin;
+}

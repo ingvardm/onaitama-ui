@@ -1,0 +1,32 @@
+.main-menu-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+}
+
+.main-menu-buttons-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.game-title {
+	font-size: 8rem;
+	display: block;
+	margin: 0 0 4rem;
+	color: lightslategrey;
+}
+
+.main-menu-button {
+	font-size: 2.6rem;
+	display: block;
+	margin: 0.6rem;
+	width: 100%;
+	padding: 0.6rem 1.2rem;
+	font-weight: bold;
+	cursor: pointer;
+}

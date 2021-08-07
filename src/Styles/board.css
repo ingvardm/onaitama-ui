@@ -1,0 +1,11 @@
+.board {
+	width: var(--size);
+	height: var(--size);
+	background-color:lightblue;
+	display: flex;
+	flex-wrap: wrap;
+	border-width: var(--border-width) / 2;
+	border-color: var(--border-color);
+	box-sizing: border-box;
+	border-style: solid;
+}

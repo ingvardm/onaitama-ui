@@ -1,20 +1,25 @@
-import React, { PropsWithChildren, ReactComponentElement } from 'react'
+import React, {  ReactComponentElement } from 'react'
+import { Link } from 'react-router-dom'
+import Table from '../GameObjects/Table/Table'
+import { useBoardStateManager } from '../state-managers/BoardStateManager'
 
 type GameSceneProps = {
-	initialGameState?: string[] | null,
+	initialGameState?: {
+		boardState?: string[][],
+	}
 }
 
 export default function GameScene({
-
+	initialGameState,
 }: GameSceneProps): ReactComponentElement<any, any>{
-
+	const boardState = useBoardStateManager()
 
 	return <div>
-		<h3>Game...</h3>
+		<Link to="/">Back</Link>
 
 		{/* enemy player scoreboard */}
 
-		{/* Table */}
+		<Table boardState={boardState}/>
 
 		{/* self scoreboard */}
 

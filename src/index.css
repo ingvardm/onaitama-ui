@@ -1,13 +1,32 @@
-body {
+* {
+  padding: 0;
   margin: 0;
+  display: block;
+  position: relative;
+}
+
+u, b, i {
+  display: inline-block;
+}
+
+head {
+  display: none;
+}
+
+html, body, :root, #root, #app, .scene {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: gainsboro;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

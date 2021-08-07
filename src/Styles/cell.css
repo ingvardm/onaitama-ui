@@ -1,0 +1,52 @@
+.cell-wrapper {
+	border-width: var(--border-width) / 2;
+	border-color: var(--border-color);
+	border-style: solid;
+	box-sizing: border-box;
+	width: 20%;
+	height: 20%;
+}
+
+.cell-red-throne {
+	background-color: red;
+}
+
+.cell-blue-throne {
+	background-color: blue;
+}
+
+.cell-selection-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	transition: opacity 160ms linear;
+	pointer-events: none;
+	background-color: rgba(255,255,255,1);
+}
+
+.cell-wrapper:hover > .cell-selection-overlay {
+	opacity: 0.3;
+}
+
+.piece {
+	background-size: 100% 100%;
+}
+
+.piece-x {
+	background-image: url("../img/x.svg");
+}
+
+.piece-X {
+	background-image: url("../img/xx.svg");
+}
+
+.piece-o {
+	background-image: url("../img/o.svg");
+}
+
+.piece-O {
+	background-image: url("../img/oo.svg");
+}

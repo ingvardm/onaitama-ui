@@ -4,35 +4,18 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 
 import GameScene from './Scenes/Game';
 import MainMenuScene from './Scenes/MainMenu';
 
 function App() {
-  return <div>
+  return <div id='app'>
     <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Main Menu</Link>
-            </li>
-            <li>
-              <Link to="/game">Game</Link>
-            </li>
-          </ul>
-        </nav>
         <Switch>
-          <Route path="/game">
-            <GameScene />
-          </Route>
-          <Route path="/">
-            <MainMenuScene />
-          </Route>
+          <Route path="/" component={MainMenuScene} exact />
+          <Route path="/game" component={GameScene} exact />
         </Switch>
-      </div>
     </Router>
   </div>
 }
