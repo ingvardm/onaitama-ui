@@ -1,5 +1,4 @@
 import React, {  ReactComponentElement } from 'react'
-import { Link } from 'react-router-dom'
 import Table from '../GameObjects/Table/Table'
 import { useBoardStateManager } from '../state-managers/BoardStateManager'
 
@@ -14,9 +13,7 @@ export default function GameScene({
 }: GameSceneProps): ReactComponentElement<any, any>{
 	const boardState = useBoardStateManager()
 
-	return <div>
-		<Link to="/">Back</Link>
-
+	return <div className='scene'>
 		{/* enemy player scoreboard */}
 
 		<Table boardState={boardState}/>

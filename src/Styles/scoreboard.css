@@ -1,0 +1,6 @@
+.scoreboard {
+	width: 100%;
+	width: var(--board-size);
+	height: var(--scoreboard-size);
+	background-color: red;
+}

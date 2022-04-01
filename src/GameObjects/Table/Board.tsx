@@ -38,15 +38,13 @@ export default function Board({
 		return cells
 	}, [boardState])
 
-	return <div>
+	return <div className='board'>
 
 		{/* Y ordinate numbers */}
 
 		{/* X ordinate letters */}
 
-		<div className='board'>
-			{drawCells}
-		</div>
+		{drawCells}
 
 	</div>
 }

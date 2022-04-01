@@ -1,7 +1,7 @@
 .board {
-	width: var(--size);
-	height: var(--size);
-	background-color:lightblue;
+	width: var(--board-size);
+	height: var(--board-size);
+	background-color:lightgrey;
 	display: flex;
 	flex-wrap: wrap;
 	border-width: var(--border-width) / 2;

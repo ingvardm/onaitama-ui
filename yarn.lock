@@ -9470,6 +9470,11 @@ react-app-polyfill@^2.0.0:
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.4.1"
 
+react-better-model@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/react-better-model/-/react-better-model-0.1.4.tgz#0f3e726e0f5d66bad45acad5387c3cd1fd43d5c5"
+  integrity sha512-CMERymcq6Vgxmvz44kiWdZEgyl0dIoI/lgohCms5W85U78c57IAESPcxNItdXVdlreccnEV7dV+oC/4mqE/xgQ==
+
 react-dev-utils@^11.0.3:
   version "11.0.4"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-11.0.4.tgz#a7ccb60257a1ca2e0efe7a83e38e6700d17aa37a"
